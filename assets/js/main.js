@@ -14,6 +14,7 @@ import { subscribeToHellfireClube } from './data/hellfire-clube.js.js'
             character: txtCharacter.value
         }
 
+        // Salva no BD
         const id = await subscribeToHellfireClube(subscribe)
         alert(`Inscrição ${id} adicionada com sucesso!`)
     })
