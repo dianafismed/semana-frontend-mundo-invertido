@@ -1,4 +1,4 @@
-import { subscribeToHellfireClube } from './data/hellfire-clube.js.js'
+import { subscribeToHellfireClube } from './data/hellfire-clube.js'
 
 (function main() {
     const txtName = document.getElementById('txtName')
@@ -13,9 +13,9 @@ import { subscribeToHellfireClube } from './data/hellfire-clube.js.js'
             level: txtLevel.value,
             character: txtCharacter.value
         }
-
         // Salva no BD
         const id = await subscribeToHellfireClube(subscribe)
         alert(`Inscrição ${id} adicionada com sucesso!`)
+        alert('foi')
     })
 })()
